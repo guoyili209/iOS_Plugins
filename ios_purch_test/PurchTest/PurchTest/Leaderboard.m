@@ -8,6 +8,8 @@
 #import <Foundation/Foundation.h>
 #import "Leaderboard.h"
 #import <GameKit/GameKit.h>
+#import "Bridge.h"
+
 @interface Leaderboard()<GKGameCenterControllerDelegate>
 @end
 
@@ -44,30 +46,35 @@
     
     localPlayer.authenticateHandler = ^(UIViewController *viewController, NSError *error){
         if (viewController != nil) {
-            [self.vc presentViewController:viewController animated:YES completion:nil];
+            [[Bridge Ins].vc presentViewController:viewController animated:YES completion:nil];
         }
         else{
             if ([GKLocalPlayer localPlayer].authenticated) {
                 NSLog(@"authentication succcesful");
                 self.GameCenterAvaliable = YES;
+                
                 [[GKLocalPlayer localPlayer] loadDefaultLeaderboardIdentifierWithCompletionHandler:^(NSString *leaderboardIdentifier, NSError *error) {
                     if (error != nil) {
                         NSLog(@"%@", [error localizedDescription]);
                     }
                     else{
-                        leaderboardIdentifier = leaderboardIdentifier;
+                        //                        leaderboardIdentifier = leaderboardIdentifier;
+                        NSLog(@"%@",leaderboardIdentifier);
                     }
                 }];
             }
             else{
                 NSLog(@"authentication unseuccseful");
                 self.GameCenterAvaliable = NO;
+                self.bShowGameCenter = NO;
+                self.bSubmitScore = NO;
             }
         }
     };
 }
 -(void)ShowGameCenter //show game centre
 {
+    self.bShowGameCenter = TRUE;
     if(self.GameCenterAvaliable==NO){
         [self Authentication];
         return;
@@ -75,7 +82,7 @@
     GKGameCenterViewController *gameCenterViewController = [[GKGameCenterViewController alloc] init];
     if (gameCenterViewController != nil) {
         gameCenterViewController.gameCenterDelegate = self;
-        [self.vc presentViewController:gameCenterViewController animated:YES completion:nil];
+        [[Bridge Ins].vc presentViewController:gameCenterViewController animated:YES completion:nil];
     }
 }
 //-(IBAction)ShowGameCenter:(id)sender //show game centre
@@ -88,7 +95,7 @@
 //}
 
 - (void)gameCenterViewControllerDidFinish:(nonnull GKGameCenterViewController *)gameCenterViewController {
-    [self.vc dismissViewControllerAnimated:YES completion:nil];
+    [[Bridge Ins].vc dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

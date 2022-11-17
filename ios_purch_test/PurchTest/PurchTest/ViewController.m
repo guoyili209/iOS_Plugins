@@ -4,9 +4,10 @@
 //
 //  Created by anni on 2022/11/4.
 //
-
+//#import "UnityAdMgr.h"
 #import "ViewController.h"
 #import <StoreKit/StoreKit.h>
+#import "Bridge.h"
 
 @interface ViewController ()<SKProductsRequestDelegate, SKPaymentTransactionObserver>
 
@@ -16,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [Bridge Ins].vc = self;
     // Do any additional setup after loading the view.
     self.areAdsRemoved = [[NSUserDefaults standardUserDefaults] boolForKey:@"areAdsRemoved"];
     [[NSUserDefaults standardUserDefaults] synchronize];
@@ -162,6 +164,19 @@
     
     
     [self.view setBackgroundColor:[UIColor blueColor]];
+}
+
+-(IBAction)ShowInterstial{
+    if(self.admgr==nil){
+        self.admgr = [UnityAdMgr new];
+    }
+    [self.admgr ShowInterstital:self];
+}
+-(IBAction)ShowLeaderboard{
+    if(self.leaderboard==nil){
+        self.leaderboard = [Leaderboard new];
+    }
+    [self.leaderboard ShowGameCenter];
 }
 
 

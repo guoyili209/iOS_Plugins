@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		913646392926340600292B96 /* Leaderboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 913646352926340500292B96 /* Leaderboard.m */; };
+		9136463D2926356F00292B96 /* Bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9136463C2926356F00292B96 /* Bridge.m */; };
+		91364640292638FA00292B96 /* UnityAdMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 9136463F292638FA00292B96 /* UnityAdMgr.m */; };
+		913646442926397800292B96 /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 913646432926397800292B96 /* UnityAds.framework */; };
+		9136464629263B9200292B96 /* libswiftCore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9136464529263B6100292B96 /* libswiftCore.tbd */; };
+		9136464829263EDF00292B96 /* libswiftCompression.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9136464729263EDF00292B96 /* libswiftCompression.tbd */; };
 		91794C202914A4590051BD27 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91794C1F2914A4590051BD27 /* AppDelegate.m */; };
 		91794C232914A4590051BD27 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91794C222914A4590051BD27 /* SceneDelegate.m */; };
 		91794C262914A4590051BD27 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91794C252914A4590051BD27 /* ViewController.m */; };
@@ -17,7 +23,6 @@
 		91794C3B2914A45C0051BD27 /* PurchTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91794C3A2914A45C0051BD27 /* PurchTestTests.m */; };
 		91794C452914A45C0051BD27 /* PurchTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91794C442914A45C0051BD27 /* PurchTestUITests.m */; };
 		91794C472914A45C0051BD27 /* PurchTestUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91794C462914A45C0051BD27 /* PurchTestUITestsLaunchTests.m */; };
-		91FF299E29233C410090B3A1 /* Leaderboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FF299D29233C410090B3A1 /* Leaderboard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		913646352926340500292B96 /* Leaderboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Leaderboard.m; sourceTree = "<group>"; };
+		913646372926340500292B96 /* Leaderboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Leaderboard.h; sourceTree = "<group>"; };
+		9136463B2926351000292B96 /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		9136463C2926356F00292B96 /* Bridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bridge.m; sourceTree = "<group>"; };
+		9136463E292638F900292B96 /* UnityAdMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnityAdMgr.h; sourceTree = "<group>"; };
+		9136463F292638FA00292B96 /* UnityAdMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnityAdMgr.m; sourceTree = "<group>"; };
+		913646432926397800292B96 /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UnityAds.framework; path = framework/UnityAds.framework; sourceTree = "<group>"; };
+		9136464529263B6100292B96 /* libswiftCore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftCore.tbd; path = usr/lib/swift/libswiftCore.tbd; sourceTree = SDKROOT; };
+		9136464729263EDF00292B96 /* libswiftCompression.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftCompression.tbd; path = usr/lib/swift/libswiftCompression.tbd; sourceTree = SDKROOT; };
 		91794C1B2914A4590051BD27 /* PurchTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PurchTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91794C1E2914A4590051BD27 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		91794C1F2914A4590051BD27 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -55,8 +69,6 @@
 		91794C402914A45C0051BD27 /* PurchTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PurchTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91794C442914A45C0051BD27 /* PurchTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PurchTestUITests.m; sourceTree = "<group>"; };
 		91794C462914A45C0051BD27 /* PurchTestUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PurchTestUITestsLaunchTests.m; sourceTree = "<group>"; };
-		91FF299C292339BC0090B3A1 /* Leaderboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Leaderboard.h; sourceTree = "<group>"; };
-		91FF299D29233C410090B3A1 /* Leaderboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Leaderboard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +76,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9136464829263EDF00292B96 /* libswiftCompression.tbd in Frameworks */,
+				913646442926397800292B96 /* UnityAds.framework in Frameworks */,
+				9136464629263B9200292B96 /* libswiftCore.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,13 +99,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9130055D2925EC15002856D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9136464729263EDF00292B96 /* libswiftCompression.tbd */,
+				9136464529263B6100292B96 /* libswiftCore.tbd */,
+				913646432926397800292B96 /* UnityAds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		91794C122914A4590051BD27 = {
 			isa = PBXGroup;
 			children = (
+				91C357B52925CE4D00153BF3 /* framework */,
 				91794C1D2914A4590051BD27 /* PurchTest */,
 				91794C392914A45C0051BD27 /* PurchTestTests */,
 				91794C432914A45C0051BD27 /* PurchTestUITests */,
 				91794C1C2914A4590051BD27 /* Products */,
+				9130055D2925EC15002856D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,16 +137,20 @@
 				91794C1E2914A4590051BD27 /* AppDelegate.h */,
 				91794C1F2914A4590051BD27 /* AppDelegate.m */,
 				91794C212914A4590051BD27 /* SceneDelegate.h */,
+				913646372926340500292B96 /* Leaderboard.h */,
+				913646352926340500292B96 /* Leaderboard.m */,
+				9136463E292638F900292B96 /* UnityAdMgr.h */,
+				9136463F292638FA00292B96 /* UnityAdMgr.m */,
 				91794C222914A4590051BD27 /* SceneDelegate.m */,
 				91794C242914A4590051BD27 /* ViewController.h */,
 				91794C252914A4590051BD27 /* ViewController.m */,
-				91FF299C292339BC0090B3A1 /* Leaderboard.h */,
-				91FF299D29233C410090B3A1 /* Leaderboard.m */,
 				91794C272914A4590051BD27 /* Main.storyboard */,
 				91794C2A2914A45B0051BD27 /* Assets.xcassets */,
 				91794C2C2914A45B0051BD27 /* LaunchScreen.storyboard */,
 				91794C2F2914A45B0051BD27 /* Info.plist */,
 				91794C302914A45B0051BD27 /* main.m */,
+				9136463B2926351000292B96 /* Bridge.h */,
+				9136463C2926356F00292B96 /* Bridge.m */,
 			);
 			path = PurchTest;
 			sourceTree = "<group>";
@@ -139,6 +170,13 @@
 				91794C462914A45C0051BD27 /* PurchTestUITestsLaunchTests.m */,
 			);
 			path = PurchTestUITests;
+			sourceTree = "<group>";
+		};
+		91C357B52925CE4D00153BF3 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,10 +309,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91FF299E29233C410090B3A1 /* Leaderboard.m in Sources */,
+				913646392926340600292B96 /* Leaderboard.m in Sources */,
 				91794C262914A4590051BD27 /* ViewController.m in Sources */,
 				91794C202914A4590051BD27 /* AppDelegate.m in Sources */,
 				91794C312914A45B0051BD27 /* main.m in Sources */,
+				9136463D2926356F00292B96 /* Bridge.m in Sources */,
+				91364640292638FA00292B96 /* UnityAdMgr.m in Sources */,
 				91794C232914A4590051BD27 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,7 +491,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = A96CV46H78;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/framework",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = PurchTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -461,6 +506,14 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/framework/UnityAds.framework",
+					"$(SDKROOT)/usr/lib/swift",
+					"$(SDKROOT)/usr/lib/swift5.0",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yili.fruitacrush;
@@ -482,7 +535,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = A96CV46H78;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/framework",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = PurchTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -492,6 +550,14 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/framework/UnityAds.framework",
+					"$(SDKROOT)/usr/lib/swift",
+					"$(SDKROOT)/usr/lib/swift5.0",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yili.fruitacrush;

@@ -6,12 +6,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Leaderboard.h"
+#import "UnityAdMgr.h"
 
 @interface ViewController : UIViewController
-@property BOOL areAdsRemoved;
 
+@property UnityAdMgr *admgr;
+@property Leaderboard *leaderboard;
+@property BOOL areAdsRemoved;
 -(IBAction)restore;
 -(IBAction)tapsGameGift;
+-(IBAction)ShowInterstial;
+-(IBAction)ShowLeaderboard;
 
 @end
 
